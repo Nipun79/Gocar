@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.sites.shortcuts import get_current_site
 from django.views.decorators.csrf import csrf_exempt, csrf_protect 
-
+from django.contrib.auth.decorators import login_required
 
 
 def home(request):
@@ -16,7 +16,7 @@ def home(request):
 
         return redirect("search")
 
-
+@login_required
 def search(request):
 
     if request.method == "GET":
@@ -42,7 +42,7 @@ def search(request):
             user=request.user, product=Product.objects.get(slug=p_slug), bookinginfo=binfo)
         return redirect("order_checkout")
 
-
+@login_required
 def order_checkout(request):
     if request.method == "GET":
 
@@ -91,7 +91,7 @@ keyid = 'rzp_test_nGR29AWDgH85E2'
 keySecret = 'dGLzzG11Xbrg8xiLJuq4UF5B'
 razorpay_client = razorpay.Client(auth=(keyid, keySecret))
 
-
+@login_required
 def order_summery(request):
      try:
         order = Order.objects.latest('user')
@@ -147,7 +147,7 @@ def handlerequest(request):
 
 
     return redirect("/")
-
+@login_required
 def profile_view(request):
     return render(request, 'account/profile.html')
 
