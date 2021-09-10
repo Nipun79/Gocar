@@ -24,8 +24,7 @@ SECRET_KEY = '@sd!bc_em@+cg%e&ad8@_81kmetna1-5fjxb-qa6=mwir7ofi^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['gocardemoapp.herokuapp.com']
 
 
 # Application definition
@@ -129,7 +128,7 @@ AUTHENTICATION_BACKENDS = [
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root/images')
 SITE_ID = 1
