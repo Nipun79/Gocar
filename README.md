@@ -14,8 +14,8 @@ gocardemoapp.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/80241460/132863266-a480c959-fded-4124-a73f-8b78ff78fd9d.png)
 <br>
 ![image](https://user-images.githubusercontent.com/80241460/132863329-8cda37be-b6e3-4dae-bfba-482d3ae11450.png)
-<br>
+<br><br>
 ![image](https://user-images.githubusercontent.com/80241460/132867245-238f13f5-d9de-4a81-a6dc-d22123427d79.png)
-<br>
+<br><br><br>
 ![image](https://user-images.githubusercontent.com/80241460/132867354-fba28015-9cb6-4109-82e6-65f58bcb4a49.png)
 <br>
