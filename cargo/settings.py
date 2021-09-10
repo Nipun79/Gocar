@@ -24,8 +24,7 @@ SECRET_KEY = '@sd!bc_em@+cg%e&ad8@_81kmetna1-5fjxb-qa6=mwir7ofi^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-# ALLOWED_HOSTS = ['gocardemoapp.herokuapp.com']
+ALLOWED_HOSTS = ['gocardemoapp.herokuapp.com']
 
 
 # Application definition
