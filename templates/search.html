@@ -1,0 +1,83 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %} 
+<br>
+
+
+  <div class="container border border-light border-2 p-2">
+    <form class="booking-form " action="{% url 'search' %} " method="get" >
+      <div class="row justify-content-center p-1">
+
+        <div class="col-lg-3" >
+            <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+        </div>
+        <div class="col-lg-3">
+          <input type="date" id="startdate" name="startdate" min="" onclick="pick()" placeholder="startdate" required class="form-control" >
+        </div>
+        <div class="col-lg-3">
+          <input type="date" id="enddate" name="enddate" min=""  onclick="pick()" placeholder="enddate" required class="form-control" >
+        </div>
+        <input type="text" name="NumberOfDays" id="NumberOfDays" hidden>
+        <div class="col-lg-2">
+          <button type="submit" class="btn btn-warning">Modify search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+<br>
+<div class="row">
+{% for product in products %}
+<div class="col-lg-4">
+<br>
+<div class="card border border-2" style="width: 20rem;">
+    <img src="{{product.image.url}}" class="card-img-top" width="150px" height="220px" >
+    <div class="card-body" >
+       <center> <p>{{product.Name}} </p></center>
+      <div class="col  text-center">   
+        <div class="row p-lg-0 text-center ps-lg-3">
+          <div class="col-lg-4 p-0">
+            <img src="{% static '/images/gear-shift.png' %}" alt="" srcset="" width="17px" height="17px"style="padding-right:4px">{{product.label}} 
+          </div>
+          <div class="col-lg-4 p-0">
+            <img src="{% static '/images/fuel-station.png' %}" alt="" srcset="" width="17px" height="17px" style="padding-right:4px;margin-top: -2px;">{{product.fuel_type}}
+            
+          </div>
+          <div class="col-lg-2 p-0">
+            <img src="{% static '/images/safety-seat.png' %}" alt="" srcset="" width="17px" height="17px" style="padding-right:4px;margin-top: -4px;">{{product.seats}}
+            
+          </div>
+        </div>  
+        
+     </div>
+     
+<hr>
+<div class="col">
+  <div class="row">
+    <div class="col justify-content-lg-start ">
+     <p style="font-size: large;"> {% widthratio product.CostPerDay 1 context.NumberOfDays %}</p>
+    </div>
+    <div class="col justify-content-md-end ps-lg-5">
+      <form action="" method="post">
+          {% csrf_token %}
+          <input type="text" name="product_slug" value="{{product.slug}}" hidden>
+          {% if product.In_inventory %}
+          <button type="submit" class="btn btn-warning">Book Now</button>
+          {% else %}
+          <button type="submit" class="btn btn-warning">Sold Out</button>
+          {% endif %}
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+ 
+{% endfor %}
+</div>
+{% endblock %}
+

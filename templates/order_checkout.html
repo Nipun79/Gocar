@@ -1,0 +1,56 @@
+  
+{% extends 'base.html' %}
+{% block content %}
+<br><br>
+<div class="container">
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box-element" id="form-wrapper">
+            <form id="form" method="post" >
+                {% csrf_token %}
+                <div id="user-info">
+                    <div class="form-field">
+                        <input required class="form-control" type="text" name="name" id='name'placeholder="Name..">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input required class="form-control" type="email" name="email" id="email" placeholder="Email..">
+                    </div>
+                </div>
+                
+                <div id="shipping-info">
+                    <hr>
+                    <p>Shipping Information:</p>
+                    <hr>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="address" placeholder="Address..">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="city" placeholder="City..">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="state" placeholder="State..">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <button type="submit" value="Continue" class="btn btn-warning">Continue</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        
+        <br>
+       </div>
+        
+    </div>
+</div>
+
+</div>
+{% endblock content %}

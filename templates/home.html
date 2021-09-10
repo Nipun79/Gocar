@@ -1,0 +1,194 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+
+<div class="container main mb-2 mt-lg-4">
+    <div class="row">
+      <div class="main-1 col-lg-5 ">
+        <img src="{% static '/images/Group2.png' %} "alt="" class="m-3 mt-5 p-lg-0">
+      </div>
+      <div class="col-lg-7">
+        <img src="{% static '/images/banner.png' %} "alt="" class="m-3 mt-4 p-lg-0">
+      </div>
+    </div>
+</div>
+<br><br><br><br>
+
+{% include 'bookinginfo.html' %}
+
+<br>
+<br>
+
+<div class="container-fluid">
+  <div class="container">
+    <center><h2 >How It Works?</h2></center>
+    <div class="row">
+      <div class="col">
+        <div class="card p-lg-2" style="width: 18rem;">
+          <center>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_cub8adn8.json"  background="transparent"  speed="1"  style="width: 125px; height: 125px;" hover loop  ></lottie-player>
+          </center> 
+          <div class="card-body">
+            <h5 class="card-title text-center"  style="color:#3C8F7C">Book & Pay</h5>
+            <p >Pick your favourite car, time and place.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card p-lg-2" style="width: 18rem;">
+          <center>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_1igfsgm6.json"  background="transparent"  speed="1"  style="width: 125px; height: 125px; align-items: center;" hover   ></lottie-player>
+          </center> 
+          <div class="card-body">
+            <h5 class="card-title text-center"  style="color:#3C8F7C">Receive</h5>
+            <p >We will deliver the car to your doorstep.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col">
+        <div class="card p-lg-2" style="width: 18rem;">
+          <center>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_3ekazgd6.json"  background="transparent"  speed="1"  style="width: 225px; height: 225px;display: inline-block;padding:0;margin-top:-50px;" hover loop ></lottie-player>
+          </center> 
+          <div class="card-body ">
+            <h5 class="card-title text-center"  style="color:#3C8F7C;margin-top: -50px">Drive</h5>
+            <p >Enjoy your Gocar self drive.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="container">
+<div class="row">
+  <div class="col">
+    <div class="card p-lg-2" style="width: 18rem;">
+      <center>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sl6mng4u.json"  background="transparent"  speed="1"  style="width: 125px; height: 125px;" hover loop  ></lottie-player>
+      </center> 
+      <div class="card-body">
+        <h5 class="card-title text-center"  style="color:#3C8F7C">Return</h5>
+        <p >Get the car back to your preferred return location, and we will take it from there.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>  
+</div>    
+
+
+<br>
+<br>
+<br>
+
+<div class="container-fluid">
+  <div class="container">
+    <center><h2 >Why Gocar?</h2></center>
+    <div class="row">
+      <div class="col ">
+        <div class="card p-lg-2" style="width: 18rem;">
+      <center> <span class="iconify" class="card-img-top" data-icon="bytesize:location" data-inline="false" style="color: #3C8F7C; width: 40px ;height:40px;align-items: center;"></span>
+      </center>
+        <div class="card-body">
+          <h6 class="card-title text-center">Go Anywhere</h6>
+          <p class="card-text text-cente">
+            Our cars have all-India permits. Just remember to pay state tolls and entry taxes.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+      <div class="card p-lg-2"  style="width: 18rem;">
+       <center> <span class="iconify" data-icon="et:search" data-inline="false" style="color: #3C8F7C;width: 50px ;height:50px;"></span>
+       </center> 
+        <div class="card-body">
+            <h6 class="card-title text-center">No Hidden Charges</h6>
+            <p class="card-text text-center">
+           Our prices include taxes and insurance.
+          What you see is what you really pay!
+          </p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col">
+          <div class="card p-lg-2" style="width: 18rem;">
+          <center>
+          <img src="{% static '/images/Group3.png' %}" alt="" width="70px" >
+          </center> 
+          <div class="card-body">
+              <h6 class="card-title text-center">Damage Insurance</h6>
+              <p class="card-text text-cente">All your bookings include damage insurance! Drive safe, but don’t worry!</p>
+          </div>
+          </div>
+      </div>
+</div>
+<div class="card p-lg-2" style="width: 18rem;">
+  <center>
+  <img src="{% static '/images/Group4.png' %}" alt="" width="70px" >
+</center>
+  <div class="card-body">
+    <h6 class="card-title text-center">Fuel Cost Included</h6>
+    <p class="card-text text-cente">
+      Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back!</p>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="container">
+  <div class="card-title"><h2 >Faq's?</h2></div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <h6>What are my liabilities in case of damage/ accident?</h6>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Your car will be covered by comprehensive insurance, to take care of damage cases. On every case of damage, your liability would be limited to the difference between the costs incurred to repair the damage and the proceeds from insurance claim with maximum liability limited to INR 10,000 In situations of irresponsible or unsafe or negligent usage, there could be discretionary exceptions to this policy, whereby you could be liable for all damages irrespective of whether or not we are able to claim insurance in such cases.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Are there any restrictions on what can I use the car for?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You can use the car for pretty much all the normal requirements. Abnormal usage (e.g., speed racing, towing/pushing/propelling, transportation of goods or people on commercial basis, transportation of large/heavy/hazardous items) is not allowed <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        What will be the car registration type and whose name will it be registered in?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">The car will be registered as a premium commercial vehicle (black plate) with an All India permit and can be driven anywhere within India without any concerns. It will be registered in the name of Revv (PrimeMover Mobility Technologies Pvt. Ltd.) or its supply partners.</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
