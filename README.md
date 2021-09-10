@@ -1,6 +1,6 @@
 # Gocar
 Gocar is a car booking application 
-gocardemoapp.herokuapp.com/
+https://gocardemoapp.herokuapp.com/
 <br>
 ![image](https://user-images.githubusercontent.com/80241460/132862076-220857e5-999f-49db-8909-f666859597f8.png)
 <br>
